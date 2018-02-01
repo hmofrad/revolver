@@ -1,0 +1,3 @@
+https://snap.stanford.edu/data/facebook_combined.txt.gz
+https://snap.stanford.edu/data/soc-LiveJournal1.txt.gz
+http://www.dis.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.USA.gr.gz
