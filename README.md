@@ -3,6 +3,7 @@ Revolver: Distributed Graph Partitioning Using Reinforcement Learning
 
 ## Compile
 ~~~
+    cd devel
     make clean && make all
 ~~~
 
@@ -11,7 +12,6 @@ Revolver: Distributed Graph Partitioning Using Reinforcement Learning
     ./main -n <num_partitions> 
            -a <revolver|spinner|random|hash|range|pagerank>
            -f [<edge_file_name> <comment_style> <delimiter> <columns>]
-           -v [<vetex_file_name> <delimiter>]
 ~~~
 
 ## Contact
