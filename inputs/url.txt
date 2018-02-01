@@ -1,3 +1,10 @@
-https://snap.stanford.edu/data/facebook_combined.txt.gz
-https://snap.stanford.edu/data/soc-LiveJournal1.txt.gz
+https://snap.stanford.edu/data/higgs-twitter.html
+https://snap.stanford.edu/data/wiki-topcats.html
+http://law.di.unimi.it/webdata/uk-2007-05@1000000/
 http://www.dis.uniroma1.it/challenge9/data/USA-road-d/USA-road-d.USA.gr.gz
+https://snap.stanford.edu/data/sx-stackoverflow.html
+https://snap.stanford.edu/data/soc-LiveJournal1.txt.gz
+http://law.di.unimi.it/webdata/enwiki-2013/
+https://snap.stanford.edu/data/com-Orkut.html
+http://law.di.unimi.it/webdata/hollywood-2011/
+http://law.di.unimi.it/webdata/eu-2015-host/
