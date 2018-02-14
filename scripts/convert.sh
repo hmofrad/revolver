@@ -15,7 +15,7 @@ GRAPHS="soc-LiveJournal1.txt";
 #GRAPHS="eu-2015-host.txt";
 #GRAPHS="hollywood-2011.txt";
 #GRAPHS="facebook_combined.txt";
-PRINT="${BASE}/distrograph/devel/print_stats";
+PRINT="${BASE}/revolver/devel/print_stats";
 
 for P in ${PARTITIONS}
 do
