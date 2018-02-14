@@ -7,7 +7,7 @@
 #BASE="/ihome/cs3580_2017F/moh18";
 #BASE="/zfs1/cs3580_2017F/moh18/";
 BASE="/home/moh18/";
-SOURCE="${BASE}/distrograph/devel/distrograph";
+SOURCE="${BASE}/revolver/devel/main";
 ALGORITHMS="range";
 #FILES="${BASE}/facebook_combined.txt";
 #FILES="${BASE}/graphs/soc-LiveJournal1.txt";
