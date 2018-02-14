@@ -13,25 +13,25 @@ ANSI_GREEN := \033[0;32m
 ANSI_RESET := \033[0m
 
 PRINT_STATS_OBJ := print_stats.o
-DISTROGRAPH_OBJ := distrograph.o
+MAIN_OBJ        := main.o
 
 PRINT_STATS := print_stats
-DISTROGRAPH := distrograph
+MAIN        := main
 COMMON_LIB  := libgraph.a
 
-LIB_INCLUDES :=           \
+LIB_INCLUDES :=   \
 		libgraph.h \
 		libla.h     \
 		libmath.h    \
 
-LIB_OBJECTS :=            \
+LIB_OBJECTS :=    \
 		libgraph.o \
 		libla.o     \
 		libmath.o    \
 
-ALG_OBJECTS :=                 \
+ALG_OBJECTS :=         \
 		print_stats.o   \
-		distrograph.o    \
+		main.o           \
 
 .PHONY: all clean caption
 			
@@ -39,8 +39,8 @@ all: caption $(ALG_OBJECTS) $(COMMON_LIB)
 	@echo "[building]"
 	$(CC) $(CFLAGS) $(PFLAGS) -o $(PRINT_STATS) $(PRINT_STATS_OBJ) $(COMMON_LIB) $(LDFLAGS)
 	$(CC) $(CFLAGS) $(PFLAGS) -o $(PRINT_STATS) $(PRINT_STATS_OBJ) $(COMMON_LIB) $(LDFLAGS)
-	$(CC) $(CFLAGS) $(PFLAGS) -o $(DISTROGRAPH) $(DISTROGRAPH_OBJ) $(COMMON_LIB) $(LDFLAGS)
-	@echo "$(ANSI_GREEN)Distrograph compiled successfully$(ANSI_RESET)"
+	$(CC) $(CFLAGS) $(PFLAGS) -o $(MAIN)        $(MAIN_OBJ)        $(COMMON_LIB) $(LDFLAGS)
+	@echo "$(ANSI_GREEN)Revolver compiled successfully$(ANSI_RESET)"
 
 caption:
 	@echo "[Compiling]"
@@ -59,7 +59,7 @@ clean:
 	@echo "[Deleting]"
 	$(RM) $(LIB_OBJECTS)
 	$(RM) $(COMMON_LIB)
-	$(RM) $(DISTROGRAPH_OBJ)
-	$(RM) $(DISTROGRAPH)
+	$(RM) $(MAIN_OBJ)
+	$(RM) $(MAIN)
 	$(RM) $(PRINT_STATS_OBJ)
 	$(RM) $(PRINT_STATS)
