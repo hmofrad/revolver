@@ -125,7 +125,13 @@ void weighted_probability_update(unsigned int low, unsigned int high, int iterat
                 weight_index = max_index_float(nodes[j].signal_, algorithm->num_partitions, 0);
             #endif  
             
-            if(j == 0) {
+            if(j == 10) {
+                printf("Original Probability: ");
+                for(k = 0; k < algorithm->num_partitions; k++) {
+                    printf("%f ", nodes[j].probability[k]);
+                }
+                printf("\n");
+                
                 printf("Original Signal: ");
                 for(k = 0; k < algorithm->num_partitions; k++) {
                     printf("%f ", nodes[j].signal_[k]);
@@ -135,6 +141,8 @@ void weighted_probability_update(unsigned int low, unsigned int high, int iterat
             
             
             nodes[j].signal_[weight_index] = nodes[j].signal_[weight_index] + nodes[j].signal_[weight_index] * weight;
+            //(void) weight;
+            //(void) weight_index;
             // > seprator for count only
             // >= seprator for count + icount
             for(k = 0; k < algorithm->num_partitions; k++)
@@ -257,7 +265,7 @@ void weighted_probability_update(unsigned int low, unsigned int high, int iterat
             memcpy(indices, negative_ind, sizeof(negative_ind));
             memcpy(indices+negative_num, positive_ind, sizeof(positive_ind));
             
-            if(j == 0) {
+            if(j == 10) {
                 printf("Modified Signal: ");
                 for(k = 0; k < algorithm->num_partitions; k++) {
                     printf("%f ", nodes[j].signal_[k]);
@@ -368,6 +376,15 @@ void weighted_probability_update(unsigned int low, unsigned int high, int iterat
                         break;
                 }
             }
+            if(j == 10) {
+            
+            printf("New Probability: ");
+                for(k = 0; k < algorithm->num_partitions; k++) {
+                    printf("%f ", nodes[j].probability[k]);
+                }
+                printf("\n");
+            }
+            
             
             if(j == idx)
             {
