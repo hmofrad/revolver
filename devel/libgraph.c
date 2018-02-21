@@ -1659,7 +1659,15 @@ void *revolver(void *arguments)
         score_array[index] += nodes[j].score;
         // Calculate reinforcement signal 
         objective_function(temp_score_array, algorithm->num_partitions, j);
+        if(j == 0) {
+            printf("Score : ");
+            for(k = 0; k < algorithm->num_partitions; k++) {
+                printf("%f ", temp_score_array[k]);
+            }
+            printf("\n");    
+        }
 	}
+    
     pthread_barrier_wait(&barrier);
 
 	// Update probability
@@ -2605,7 +2613,10 @@ void score_function(float *array, int count, int index)
     src_node = nodes[index].head;
     while(src_node)
     {   
-        l = src_node->destination;
+        //if(index == 0) {
+        //    printf("%d \n", nodes[src_node->destination].label);    
+        //}
+        l = src_node->destination;        
         temp_weigth = 0;
         temp_weigth = src_node->count + src_node->icount;
         array[nodes[l].label] += temp_weigth;
