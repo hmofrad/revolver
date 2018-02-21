@@ -1,5 +1,5 @@
 # Revolver
-Revolver: Distributed Graph Partitioning Using Reinforcement Learning
+Revolver: Vetex-centric Graph Partitioning Using Reinforcement Learning
 
 ## Compile
 ~~~
