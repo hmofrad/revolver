@@ -22,6 +22,7 @@ Revolver: Vetex-centric Graph Partitioning Using Reinforcement Learning
 ## Reference
 ~~~
     Mohammad Hasanzadeh Mofrad, Rami Melhem, and Mohammad Hammoud. 
-    “Revolver: Vertex-centric Graph Partitioning Using Reinforcement Learning.” In proceedings of IEEE International Conference on Cloud Computing (CLOUD), 2018. 
+    “Revolver: Vertex-centric Graph Partitioning Using Reinforcement Learning.” 
+    In proceedings of IEEE International Conference on Cloud Computing (CLOUD), 2018. 
     (http://conferences.computer.org/cloud/2018/)
 ~~~
